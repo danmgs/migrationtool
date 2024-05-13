@@ -77,7 +77,7 @@ Les équipes devront désactiver les étapes Sonar dans leur pipeline de build *
 
 <A déterminer pour l'assistance aux équipes>
 
-- Je suis le manageur d'une équipe Engie WALNUT, combien ça coute tout ça ?
+- Je suis le manageur d'une équipe Engie GEMS. Avant ITSREL payait tout pour toutes les équipes d'engie GEMS. Maintenant, si je passe chez Sonar WALNUT: combien ça me coute tout ça ?
   
 Chaque projet sonarisé chez WALNUT porte une clé identifiant. ce projet est déclarée et le cout se fait comme indiqué dans cette page <mettre le lien de la page ici>
 
