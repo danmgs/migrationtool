@@ -60,12 +60,17 @@ Comment faire ?
 
 - En tant que développeur d'une équipe Engie GEMS, j'aimerais conserver mes quality profiles et/ou quality gates
   
-1. Sonar Walnut permet d'avoir une quality profile et quality gates dédiée à chaque projet qui sont sonarisés. Mais il est possible de les récupérer à l'identique des quality profiles et/ou quality gates qu'il y avait chez Sonar ITSREL.
-Il faut exporter le profile ou gate en XML et le reimporter.
+1. Sonar Walnut permet d'avoir  d'entrée une quality profile et quality gates propre à chaque projet (cas simple de base).
+
+Cas compliqué: Mais il sera possible de les récupérer à l'identique des quality profiles et/ou quality gates qu'il y avait chez Sonar ITSREL.
+
+Comment: Il faut exporter le profile ou gate en XML et le reimporter.
 Par défaut, suite à la mgration, ce sera les quality profile et gates de base "Sonar Way"
 Sinon, pour toute personalisation , les équipes intéréssées devront contacter WALNUT (cas par cas de customisation à la demande)
 
 - Quelle est la date limite pour faire la migration ? Jusqu'à quand le portal Sonar ITSREL sera dispo ?
+
+
 1. On renouvelle pas la license SOnar ITSREL qui périme le XXX 2024. 
 Chaque équipe chez GEMS doivent migrer. A défaut, elles devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds. (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
 2. On veut bien prolonger la license encore 1 an le temps de migrer afin que les équipes puissent avoir une référence entre le Sonar WALNUT et le Sonar ITSREL, parfaire leur configuration etc
