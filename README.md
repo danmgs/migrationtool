@@ -2,7 +2,7 @@
 
 ### Contexte
 
-Sonar de l'équipe ITSREL (entité Engie GEMS) va être migré vers Sonar de l'équipe WALNUT (entité Engie Digital). Le but est de lister les points susceptibles d'être rencontrés lors de cette migration.
+Sonar de l'équipe ITSREL (entité Engie GEMS) va être migré vers Sonar de l'équipe WALNUT (entité Engie Digital).
 
 L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étapes pour y arriver.
 
@@ -13,7 +13,7 @@ L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étap
 - Une communication sera envoyé aux équipes pour les sensibiliser. Cette communication contiendra un lien vers une FAQ confluence (contenu listé ci-dessous).
 La communication guidera les équipes GEMS (FAQ) et mentionnera les points suivant:
 
-- Concrétement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
+- Concrétement et certainement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
 
 - Cela permettra de faire un ménage naturellement de projets dépréciés.
 Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
