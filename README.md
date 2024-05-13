@@ -95,6 +95,13 @@ Les équipes devront désactiver les étapes Sonar dans leur pipeline de build *
   
 Chaque projet sonarisé chez WALNUT porte une clé identifiant. ce projet est déclarée et le cout se fait comme indiqué dans cette page <mettre le lien de la page ici>
 
+- Je suis chez Engie GEMS, est ce que l'usage de Sonar est nécessaire ?
+
+Non ce n'est pas obligatoire. 
+Cependant, cela permet de maitriser la dette technique et de garantir la qualité de code de vos projets. 
+Aussi, Sonarisé un projet aura un cout <mettre le lien de la page ici>
+
+
 
 
 
