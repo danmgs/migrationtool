@@ -6,6 +6,23 @@ Sonar de l'équipe ITSREL (entité Engie GEMS) va être migré vers Sonar de l'�
 
 L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étapes pour y arriver.
 
+### Etats des lieux (simplifié)
+
+- Il y a 285 projets dans le portal Sonar ITSREL.
+
+- Une communication sera envoyé aux équipes pour les sensibiliser. Cette communication contiendra un lien vers une FAQ confluence (contenu listé ci-dessous).
+La communication dira:
+
+- Concrétement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
+
+- Cela permettra de faire un nettoyage de projets déprécié.
+Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
+
+- Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car elles n'ont pas été mis à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod depuis des lustres, sans besoin de fix).
+
+- Chaque équipe se verra facturé à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer !
+
+
 ### Définitions:
 
 - **Quality profile**:
@@ -52,7 +69,7 @@ Sinon, pour toute personalisation , les équipes intéréssées devront contacte
 - Quelle est la date limite pour faire la migration ? Jusqu'à quand le portal Sonar ITSREL sera dispo ?
 1. On renouvelle pas la license SOnar ITSREL qui périme le XXX 2024. 
 Chaque équipe chez GEMS doivent migrer. A défaut, elles devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds. (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
-2. On décide de la renouveller encore 1 an le temps de migrer afin que les équipes puissent avoir une référence entre le Sonar WALNUT et le Sonar ITSREL.
+2. On veut bien prolonger la license encore 1 an le temps de migrer afin que les équipes puissent avoir une référence entre le Sonar WALNUT et le Sonar ITSREL, parfaire leur configuration etc
 
 - En tant que développeur d'une équipe Engie GEMS, je n'ai pas eu le temps de migrer mon projet. ça fait longtemps que je n'ai pas eu besoin de le builder et j'ai besoin de faire un build pour un fix/une release en PROD.
 Les équipes devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
@@ -60,6 +77,10 @@ Les équipes devront désactiver les étapes Sonar dans leur pipeline de build *
 - En tant que développeur d'une équipe Engie GEMS, j'ai des soucis pour configurer ma pipeline de build pour  faire les analyse et les pousser des analyses vers le Sonar WALNUT. Je crois que ma machine de build n'est pas correctement configuré. A qui dois je m'adresser ?
 
 <A déterminer pour l'assistance aux équipes>
+
+- Je suis le manageur d'une équipe Engie WALNUT, combien ça coute tout ça ?
+  
+Chaque projet sonarisé chez WALNUT porte une clé identifiant. ce projet est déclarée et le cout se fait comme indiqué dans cette page <mettre le lien de la page ici>
 
 
 
