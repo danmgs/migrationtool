@@ -75,12 +75,14 @@ Sinon, pour toute personalisation , les équipes intéréssées devront contacte
 Chaque équipe chez GEMS doivent migrer. A défaut, elles devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds. (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
 2. On veut bien prolonger la license encore 1 an le temps de migrer afin que les équipes puissent avoir une référence entre le Sonar WALNUT et le Sonar ITSREL, parfaire leur configuration etc
 
-- En tant que développeur d'une équipe Engie GEMS, je n'ai pas eu le temps de migrer mon projet. ça fait longtemps que je n'ai pas eu besoin de le builder et j'ai besoin de faire un build pour un fix/une release en PROD.
+- En tant que développeur d'une équipe Engie GEMS, je n'ai pas eu le temps de migrer mon projet. ça fait longtemps que je n'ai pas eu besoin de le builder et j'ai besoin de faire un build pour un fix/une release en PROD. Ma build est bloqué car elle échoue aux étapes Sonar. Que faire ?
+
+
 Les équipes devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
 
 - En tant que développeur d'une équipe Engie GEMS, j'ai des soucis pour configurer ma pipeline de build pour  faire les analyse et les pousser des analyses vers le Sonar WALNUT. Je crois que ma machine de build n'est pas correctement configuré. A qui dois je m'adresser ?
 
-<A déterminer pour l'assistance aux équipes>
+<TBD pour l'assistance aux équipes: ITSREL ou WALNUT ?>
 
 - Je suis le manageur d'une équipe Engie GEMS. Avant ITSREL payait tout pour toutes les équipes d'engie GEMS. Maintenant, si je passe chez Sonar WALNUT: combien ça me coute tout ça ?
   
