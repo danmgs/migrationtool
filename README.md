@@ -1,15 +1,24 @@
 # FAQ de migration Sonar
 
+### Contexte
+
+Sonar de l'équipe ITSREL (entité Engie GEMS) va être migré vers Sonar de l'équipe WALNUT (entité Engie Digital). Le but est de lister les points susceptibles d'être rencontrés lors de cette migration.
+
 ### Définitions:
 
-- **Quality profile**: ensemble de règles de codage sur divers et nombreux langages C#, java, salesforce, python, html.. (exemple: ne jamais définir une variable non utilisée, ne jamais renvoyé une liste null) qu'on active ou pas).
+- **Quality profile**:
+
+ensemble de règles de codage sur divers et nombreux langages C#, java, salesforce, python, html.. (exemple: ne jamais définir une variable non utilisée, ne jamais renvoyé une liste null) qu'on active ou pas).
 Il y a la quality profile "Sonar Way" de base. 
+
 On peut en créer d'autres qui sont des déclinaisons de la Sonar Way, en
 - conservant l'héritage des règles (si des règles de la quality profile SOnar way est modifiée , alors ce sera répercuté sur les quality profiles enfants), 
 - ou bien sans conserver (la quality profile demande un effort à être maintenue par les équipes propriétaires)
 
-- **Quality Gates**: ensemble de règle macro comme "% de code à couvrir en terme de test, vis à vis du nouveau code introduit", "% de code non sécurisé introduit" etc
-Il y a la quality gates "Sonar Way" de base. On peut en créer des custom.
+- **Quality Gates**:
+
+ensemble de règle macro comme "% de code à couvrir en terme de test, vis à vis du nouveau code introduit", "% de code non sécurisé introduit", etc
+Il y a la quality gates "Sonar Way" de base. On peut créer des quality gates customisées.
 
 ### Use cases:
 
@@ -44,9 +53,11 @@ Chaque équipe chez GEMS doivent migrer. A défaut, elles devront désactiver le
 2. On décide de la renouveller encore 1 an le temps de migrer afin que les équipes puissent avoir une référence entre le Sonar WALNUT et le Sonar ITSREL.
 
 - En tant que développeur d'une équipe Engie GEMS, je n'ai pas eu le temps de migrer mon projet. ça fait longtemps que je n'ai pas eu besoin de le builder et j'ai besoin de faire un build pour un fix/une release en PROD.
-Les équipes devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds. (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
+Les équipes devront désactiver les étapes Sonar dans leur pipeline de build **pour ne pas être bloquer** dans les builds (Dans ce cas de figure, elles risquent simplement de cumuler de la dette technique)
 
-- En tant que développeur d'une équipe Engie GEMS, j'ai des soucis pour configurer ma pipeline de build pour pousser dans le Sonar WALNUT. Je crois que ma machine de build n'est pas correctement configuré. A qui dois je m'adresser ?
+- En tant que développeur d'une équipe Engie GEMS, j'ai des soucis pour configurer ma pipeline de build pour  faire les analyse et les pousser des analyses vers le Sonar WALNUT. Je crois que ma machine de build n'est pas correctement configuré. A qui dois je m'adresser ?
+
+<A déterminer pour l'assistance aux équipes>
 
 
 
