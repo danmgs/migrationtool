@@ -20,7 +20,7 @@ Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
 
 - Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car elles n'ont pas été mis à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod depuis des lustres, sans besoin de fix).
 
-- Chaque équipe se verra facturée à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer !
+- Chaque équipe se verra facturée à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer, il faut vraiment en avoir utilité !
 
 
 ### Définitions:
