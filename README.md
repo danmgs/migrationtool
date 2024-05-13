@@ -20,7 +20,7 @@ Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
 
 - Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car elles n'ont pas été mis à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod depuis des lustres, sans besoin de fix).
 
-- Chaque équipe se verra facturé à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer !
+- Chaque équipe se verra facturée à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer !
 
 
 ### Définitions:
@@ -54,14 +54,13 @@ Comment faire ?
 
 2 cas possibles qu'on pourra gérer.
 
-1. Non (cas simple, celui que ITSREL devrait cadrer pour simplifier la migration)
-2. Oui. Il faut que les instances Sonar Walnut et GEMS soit identiques en version. On export d'un côté et on import de l'autre, cela fonctionne si les quality gates et profiles existent.
-   à voir pour le cas 2. il faut étudier la faisabilité , simuler ce cas de figure enrte les 2 Sonar.
+1. Non (cas le plus simple, celui que ITSREL devrait privilégier pour faciliter la migration au maximum)
+2. Oui. Il faut que les instances Sonar Walnut et GEMS soit identiques en version. On exporte d'un côté et on importe de l'autre, cela fonctionne si les quality gates et profiles du projet à migrer existent au préalable. Ceci dit, à voir pour le cas 2: il faut étudier la faisabilité , simuler ce cas de figure enrte les 2 Sonar.
 
 
 - En tant que développeur d'une équipe Engie GEMS, j'aimerais conserver mes quality profiles et/ou quality gates
   
-1. Sonar Walnut permet d'avoir une quality profil et quality gates dédiée à chaque projet qui sont sonarisés. Mais il est possible de les récupérer à l'identique des quality profiles et/ou quality gates qu'il y avait chez Sonar ITSREL.
+1. Sonar Walnut permet d'avoir une quality profile et quality gates dédiée à chaque projet qui sont sonarisés. Mais il est possible de les récupérer à l'identique des quality profiles et/ou quality gates qu'il y avait chez Sonar ITSREL.
 Il faut exporter le profile ou gate en XML et le reimporter.
 Par défaut, suite à la mgration, ce sera les quality profile et gates de base "Sonar Way"
 Sinon, pour toute personalisation , les équipes intéréssées devront contacter WALNUT (cas par cas de customisation à la demande)
