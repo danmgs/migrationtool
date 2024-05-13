@@ -15,7 +15,7 @@ La communication guidera les équipes GEMS (FAQ) et mentionnera les points suiva
 
 - Concrétement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
 
-- Cela permettra de faire un nettoyage de projets déprécié.
+- Cela permettra de faire un ménage naturellement de projets dépréciés.
 Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
 
 - Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car elles n'ont pas été mis à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod depuis des lustres, sans besoin de fix).
