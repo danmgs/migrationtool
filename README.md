@@ -10,29 +10,34 @@ L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étap
 
 - Il y a 285 projets dans le portal Sonar ITSREL.
 
-- Une communication sera envoyé aux équipes pour les sensibiliser. Cette communication contiendra un lien vers une FAQ confluence (contenu listé ci-dessous).
-La communication guidera les équipes GEMS (FAQ) et mentionnera les points suivant:
+- Une communication sera envoyée aux équipes pour les sensibiliser. Cette communication contiendra un lien vers une FAQ confluence (contenu listé ci-dessous).
+La communication guidera les équipes GEMS (FAQ) et mentionnera des points, parmi lesquels:
 
-- Concrétement et certainement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
+- Concrétement et certainement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildés chez Engie GEMS depuis un moment. 
 
-- Cela permettra de faire un ménage naturellement de projets dépréciés.
-Il y a des projets "POC" avec 0 lignes de code (CF le report  excel de Daniel)
+- Cela permettra de faire naturellement un ménage de projets dépréciés.
+Note: Il y a des projets "POC" avec 0 lignes de code chez Sonar ITSREL (CF le report  excel de Daniel)
 
-- Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car elles n'ont pas été mis à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod depuis des lustres, sans besoin de fix).
+- Plusieurs équipes doivent certainement ne pas se rendre compte que leurs pipelines de builds "Sonar" ne fonctionnent plus car ces dernières n'ont pas été mise à jour (maintenance non faite forçant de faire usage d'un service connection de type https, ou build non lancé sur ce projet depuis un bail car mise en prod sans soucis depuis des lustres).
 
-- Chaque équipe se verra facturée à terme en fonction du nombre de ligne de codes qu'elles envoient. Cela les sensibilisera et portera leur attention sur le fait qu'on peut exclure des types de fichiers dans leurs analyses Sonar (builds plus rapide et moins couteux en terme de lignes et donc de cout). Il est donc temps de ne plus envoyer du code dans Sonar simplement pour envoyer, il faut vraiment en avoir utilité !
+- Chaque équipe se verra facturée à terme en fonction du nombre de ligne de codes qu'elles envoient.
+
+Cela portera leur attention sur le fait qu'on exclure des types de fichiers des analyses Sonar (permet aux builds d'être plus rapides et moins couteux en terme de lignes et de budget).
+Les projets auront donc une raison utile de se retrouver Sonarisé.
 
 
 ### Définitions:
 
 - **Quality profile**:
 
-ensemble de règles de codage sur divers et nombreux langages C#, java, salesforce, python, html.. (exemple: ne jamais définir une variable non utilisée, ne jamais renvoyé une liste null) qu'on active ou pas).
-Il y a la quality profile "Sonar Way" de base. 
+ensemble de règles de codage sur divers et nombreux langages C#, java, salesforce, python, html..
 
-On peut en créer d'autres qui sont des déclinaisons de la Sonar Way, en
-- conservant l'héritage des règles (si des règles de la quality profile SOnar way est modifiée , alors ce sera répercuté sur les quality profiles enfants), 
-- ou bien sans conserver (la quality profile demande un effort à être maintenue par les équipes propriétaires)
+Exemple: ne jamais définir une variable non utilisée, ne jamais renvoyé une liste null. On peut activer ou désactiver ces règles.
+Il y a la quality profile "Sonar Way" avec les règles recommandées de base par Sonar. 
+
+On peut en créer d'autres qui sont des déclinaisons de la quality profile "Sonar Way",
+- tout en conservant l'héritage des règles (si des règles de la quality profile SOnar way est modifiée , alors ce sera répercuté sur les quality profiles enfants), 
+- ou bien sans conserver (la quality profile aura un "cycle de vie en stand alone", demandera un effort à être maintenue par les équipes propriétaires)
 
 - **Quality Gates**:
 
