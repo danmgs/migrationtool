@@ -4,6 +4,8 @@
 
 Sonar de l'équipe ITSREL (entité Engie GEMS) va être migré vers Sonar de l'équipe WALNUT (entité Engie Digital). Le but est de lister les points susceptibles d'être rencontrés lors de cette migration.
 
+L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étapes pour y arriver.
+
 ### Définitions:
 
 - **Quality profile**:
