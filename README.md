@@ -11,7 +11,7 @@ L'objectif est d'avoir un Sonar au sein du groupe. Il faut déterminer les étap
 - Il y a 285 projets dans le portal Sonar ITSREL.
 
 - Une communication sera envoyé aux équipes pour les sensibiliser. Cette communication contiendra un lien vers une FAQ confluence (contenu listé ci-dessous).
-La communication dira:
+La communication guidera les équipes GEMS (FAQ) et mentionnera les points suivant:
 
 - Concrétement, tout ne pourra pas être migré car il y a des projets qui ne sont plus buildé chez Engie GEMS depuis un moment. 
 
